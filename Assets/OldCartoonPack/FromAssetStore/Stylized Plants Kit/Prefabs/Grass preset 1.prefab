@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2800807107651422873}
-  - component: {fileID: 6481762925085402929}
   m_Layer: 0
   m_Name: Grass preset 1
   m_TagString: Untagged
@@ -39,20 +38,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &6481762925085402929
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9134394802300996971}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1001 &69292784472476361
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108,7 +93,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -11.509
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1856478650365438554, guid: 28991975cf68a7a41a88592f74249b1b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 28991975cf68a7a41a88592f74249b1b, type: 3}
 --- !u!4 &4590589457367297194 stripped
 Transform:
@@ -170,7 +156,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass 2 (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6605051799607677542, guid: 53a84e450c8f0224db0e092d816928dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 53a84e450c8f0224db0e092d816928dd, type: 3}
 --- !u!4 &5768748174642128753 stripped
 Transform:
@@ -232,7 +219,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass 2 (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6605051799607677542, guid: 53a84e450c8f0224db0e092d816928dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 53a84e450c8f0224db0e092d816928dd, type: 3}
 --- !u!4 &4779157334045388217 stripped
 Transform:
@@ -294,7 +282,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass 2 (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6605051799607677542, guid: 53a84e450c8f0224db0e092d816928dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 53a84e450c8f0224db0e092d816928dd, type: 3}
 --- !u!4 &8338142721899027366 stripped
 Transform:
@@ -356,7 +345,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.894
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1856478650365438554, guid: 28991975cf68a7a41a88592f74249b1b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 28991975cf68a7a41a88592f74249b1b, type: 3}
 --- !u!4 &1371275037388846767 stripped
 Transform:
@@ -418,7 +408,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom 2 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4310015269932369585, guid: 9d47ced64b1eb334dbd73e6bd7f84205, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9d47ced64b1eb334dbd73e6bd7f84205, type: 3}
 --- !u!4 &141771165673023716 stripped
 Transform:
@@ -480,7 +471,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Grass 2 (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6605051799607677542, guid: 53a84e450c8f0224db0e092d816928dd, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 53a84e450c8f0224db0e092d816928dd, type: 3}
 --- !u!4 &3855113067036343133 stripped
 Transform:
@@ -542,7 +534,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 2.413
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1856478650365438554, guid: 28991975cf68a7a41a88592f74249b1b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 28991975cf68a7a41a88592f74249b1b, type: 3}
 --- !u!4 &5175169495224434736 stripped
 Transform:
