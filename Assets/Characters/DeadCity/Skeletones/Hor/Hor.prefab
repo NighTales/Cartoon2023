@@ -8058,7 +8058,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8605565858010452896, guid: 2087111a1eba7f04a8922df5c50d5842, type: 3}
       propertyPath: m_PropertySheet.m_Float.m_Array.Array.data[1].m_Value
-      value: 1
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8605565858010452896, guid: 2087111a1eba7f04a8922df5c50d5842, type: 3}
       propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Name
