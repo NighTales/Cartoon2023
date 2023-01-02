@@ -9,12 +9,28 @@ public class LineController : MonoBehaviour
     [SerializeField]
     private LineRenderer lineRenderer;
 
+    [SerializeField]
+    private bool debug = false;
+
     private void Start()
     {
         lineRenderer.positionCount = points.Count;
     }
 
     void Update()
+    {
+        CheckLine();
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (debug)
+        {
+            CheckLine();
+        }
+    }
+
+    private void CheckLine()
     {
         for (int i = 0; i < points.Count; i++)
         {
