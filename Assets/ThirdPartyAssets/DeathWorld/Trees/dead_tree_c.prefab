@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3247572463711378096}
   - component: {fileID: 3247572463711378097}
   - component: {fileID: 3247572463711378102}
+  - component: {fileID: 9033399032670966435}
   m_Layer: 0
   m_Name: Leaves_Orange
   m_TagString: Untagged
@@ -230,6 +231,25 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &9033399032670966435
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3247572463711378103}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 818932a9b3244904bb5d836dd30b9f68, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3248616316048931047
 GameObject:
   m_ObjectHideFlags: 0
