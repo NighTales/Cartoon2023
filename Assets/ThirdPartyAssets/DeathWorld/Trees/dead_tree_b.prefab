@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 424647030118763389}
   - component: {fileID: 424647030118763379}
   - component: {fileID: 424647030118763388}
+  - component: {fileID: 2885886612401294169}
   m_Layer: 0
   m_Name: Leaves_Blue
   m_TagString: Untagged
@@ -318,3 +319,22 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!95 &2885886612401294169
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424647030118763390}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 818932a9b3244904bb5d836dd30b9f68, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
