@@ -84,6 +84,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b50b8c05fd37c8746ae17b24eb2c518b, type: 2}
     - {fileID: 11400000, guid: a7a0171f01b2617408ea3ea1ff6c93ad, type: 2}
     - {fileID: 11400000, guid: 10ea8d3a3300ad14eae759d61fbd9c92, type: 2}
+    - {fileID: 11400000, guid: 869d377e5e717934b93ef9ad0258c1f0, type: 2}
     m_Events:
     - m_PersistentCalls:
         m_Calls:
@@ -207,6 +208,20 @@ MonoBehaviour:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 711046300240044283}
+          m_TargetAssemblyTypeName: MaterialTexturSetUpModul, Assembly-CSharp
+          m_MethodName: SetUpPuck
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 8
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0

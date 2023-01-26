@@ -356,7 +356,7 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1292091006032733179}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -539,7 +539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2344063811812347533}
   m_LocalRotation: {x: 0.098067015, y: -0, z: -0, w: 0.99517983}
-  m_LocalPosition: {x: 0.000011046675, y: 0.37089366, z: -0.0006391257}
+  m_LocalPosition: {x: 0.000011046675, y: -0.358, z: -0.146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3659944505429889205}
@@ -557,7 +557,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.6075885, b: 0.3726415, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1039,6 +1039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3659944504291126663}
+  - component: {fileID: 383109995}
   m_Layer: 0
   m_Name: Artem_Village
   m_TagString: Untagged
@@ -1061,6 +1062,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &383109995
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3659944504291126662}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3659944504365494114
 GameObject:
   m_ObjectHideFlags: 0
@@ -3164,7 +3184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8281272195494370599}
   m_Layer: 0
-  m_Name: Flames
+  m_Name: FlamesLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3918,7 +3938,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8444698041454710057}
   m_Layer: 0
-  m_Name: Flames
+  m_Name: FlamesRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3979,7 +3999,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8117512139111181615}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: a66eef7b2e73831419c23cd319d2bc43, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: ff7962aff0b876045b00cb324a1b4526, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -4000,6 +4020,15 @@ VisualEffect:
       - m_Value: 0.5
         m_Name: SoftParticleFactor
         m_Overridden: 1
+      - m_Value: 1
+        m_Name: Lifetime
+        m_Overridden: 1
+      - m_Value: 100
+        m_Name: Rate
+        m_Overridden: 1
+      - m_Value: 0.05
+        m_Name: SpawnSphereRadius
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -4010,6 +4039,9 @@ VisualEffect:
       - m_Value: {x: -0.5, y: 0, z: 0}
         m_Name: Wind Direction_direction
         m_Overridden: 1
+      - m_Value: {x: 0, y: 0.5, z: 0}
+        m_Name: Velocity
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -4019,7 +4051,42 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array: []
     m_AnimationCurve:
-      m_Array: []
+      m_Array:
+      - m_Value:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.33750153
+            value: 0.14687347
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Name: SizeOverLife
+        m_Overridden: 1
     m_Gradient:
       m_Array:
       - m_Value:
@@ -4052,6 +4119,37 @@ VisualEffect:
           m_NumColorKeys: 5
           m_NumAlphaKeys: 4
         m_Name: FlameThrowerGradient
+        m_Overridden: 1
+      - m_Value:
+          serializedVersion: 2
+          key0: {r: 766.9961, g: 208.0106, b: 0, a: 1}
+          key1: {r: 7.9066987, g: 1.7008214, b: 0.41396317, a: 1}
+          key2: {r: 0.9433962, g: 0.68260616, b: 0, a: 0}
+          key3: {r: 0, g: 0, b: 0, a: 0}
+          key4: {r: 0, g: 0, b: 0, a: 0}
+          key5: {r: 0, g: 0, b: 0, a: 0}
+          key6: {r: 0, g: 0, b: 0, a: 0}
+          key7: {r: 0, g: 0, b: 0, a: 0}
+          ctime0: 0
+          ctime1: 29684
+          ctime2: 65535
+          ctime3: 0
+          ctime4: 0
+          ctime5: 0
+          ctime6: 0
+          ctime7: 0
+          atime0: 0
+          atime1: 56669
+          atime2: 65535
+          atime3: 65535
+          atime4: 0
+          atime5: 0
+          atime6: 0
+          atime7: 0
+          m_Mode: 0
+          m_NumColorKeys: 3
+          m_NumAlphaKeys: 3
+        m_Name: ColorOverLife
         m_Overridden: 1
     m_NamedObject:
       m_Array: []
@@ -4137,7 +4235,7 @@ VisualEffect:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8148186998407217354}
   m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: a66eef7b2e73831419c23cd319d2bc43, type: 3}
+  m_Asset: {fileID: 8926484042661614526, guid: ff7962aff0b876045b00cb324a1b4526, type: 3}
   m_InitialEventName: OnPlay
   m_InitialEventNameOverriden: 0
   m_StartSeed: 0
@@ -4158,6 +4256,15 @@ VisualEffect:
       - m_Value: 0.5
         m_Name: SoftParticleFactor
         m_Overridden: 1
+      - m_Value: 1
+        m_Name: Lifetime
+        m_Overridden: 1
+      - m_Value: 100
+        m_Name: Rate
+        m_Overridden: 1
+      - m_Value: 0.05
+        m_Name: SpawnSphereRadius
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -4168,6 +4275,9 @@ VisualEffect:
       - m_Value: {x: -0.5, y: 0, z: 0}
         m_Name: Wind Direction_direction
         m_Overridden: 1
+      - m_Value: {x: 0, y: 0.5, z: 0}
+        m_Name: Velocity
+        m_Overridden: 1
     m_Vector4f:
       m_Array: []
     m_Uint:
@@ -4177,7 +4287,42 @@ VisualEffect:
     m_Matrix4x4f:
       m_Array: []
     m_AnimationCurve:
-      m_Array: []
+      m_Array:
+      - m_Value:
+          serializedVersion: 2
+          m_Curve:
+          - serializedVersion: 3
+            time: 0
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 0.33750153
+            value: 0.14687347
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          - serializedVersion: 3
+            time: 1
+            value: 0
+            inSlope: 0
+            outSlope: 0
+            tangentMode: 0
+            weightedMode: 0
+            inWeight: 0
+            outWeight: 0
+          m_PreInfinity: 2
+          m_PostInfinity: 2
+          m_RotationOrder: 4
+        m_Name: SizeOverLife
+        m_Overridden: 1
     m_Gradient:
       m_Array:
       - m_Value:
@@ -4210,6 +4355,37 @@ VisualEffect:
           m_NumColorKeys: 5
           m_NumAlphaKeys: 4
         m_Name: FlameThrowerGradient
+        m_Overridden: 1
+      - m_Value:
+          serializedVersion: 2
+          key0: {r: 766.9961, g: 208.0106, b: 0, a: 1}
+          key1: {r: 7.9066987, g: 1.7008214, b: 0.41396317, a: 1}
+          key2: {r: 0.9433962, g: 0.68260616, b: 0, a: 0}
+          key3: {r: 0, g: 0, b: 0, a: 0}
+          key4: {r: 0, g: 0, b: 0, a: 0}
+          key5: {r: 0, g: 0, b: 0, a: 0}
+          key6: {r: 0, g: 0, b: 0, a: 0}
+          key7: {r: 0, g: 0, b: 0, a: 0}
+          ctime0: 0
+          ctime1: 29684
+          ctime2: 65535
+          ctime3: 0
+          ctime4: 0
+          ctime5: 0
+          ctime6: 0
+          ctime7: 0
+          atime0: 0
+          atime1: 56669
+          atime2: 65535
+          atime3: 65535
+          atime4: 0
+          atime5: 0
+          atime6: 0
+          atime7: 0
+          m_Mode: 0
+          m_NumColorKeys: 3
+          m_NumAlphaKeys: 3
+        m_Name: ColorOverLife
         m_Overridden: 1
     m_NamedObject:
       m_Array: []
