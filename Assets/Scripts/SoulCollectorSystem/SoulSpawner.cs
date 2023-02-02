@@ -19,6 +19,47 @@ public class SoulSpawner : MonoBehaviour
         StartCoroutine(FlyToTargetCoroutine(soul));
     }
 
+    public void SpawnBlue()
+    {
+        SpawnSoulOfColor(0);
+    }
+    public void SpawnYellow()
+    {
+        SpawnSoulOfColor(1);
+    }
+    public void SpawnGreen()
+    {
+        SpawnSoulOfColor(2);
+    }
+    public void SpawnRed()
+    {
+        SpawnSoulOfColor(3);
+    }
+    public void SpawnPurple()
+    {
+        SpawnSoulOfColor(4);
+    }
+    public void SpawnCyan()
+    {
+        SpawnSoulOfColor(5);
+    }
+    public void SpawnOrange()
+    {
+        SpawnSoulOfColor(6);
+    }
+    public void SpawnPink()
+    {
+        SpawnSoulOfColor(7);
+    }
+
+    private void SpawnSoulOfColor(int colorNumber)
+    {
+        GameObject soul = Instantiate(soulPrefab, soulSpawnPoint.position, soulSpawnPoint.rotation);
+        soul.GetComponent<Soul>().SetSoulColor(soulColors[colorNumber]);
+        StartCoroutine(FlyToTargetCoroutine(soul));
+    }
+
+
     public IEnumerator FlyToTargetCoroutine(GameObject soul)
     {
         Transform target = GetNearSoulTarget(soul);
@@ -31,7 +72,7 @@ public class SoulSpawner : MonoBehaviour
         {
             soulDirection = target.position - soulTransfom.position;
 
-            soulTransfom.position += soulDirection.normalized * soulSpeed * Time.deltaTime;
+            soulTransfom.position += soulSpeed * Time.deltaTime * soulDirection.normalized;
 
             yield return null;
         }
