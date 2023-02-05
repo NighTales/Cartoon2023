@@ -6732,7 +6732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3853254721797896648, guid: a3a698f4508f77e45b267e7e8a921057, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.937
       objectReference: {fileID: 0}
     - target: {fileID: 3853254721797896648, guid: a3a698f4508f77e45b267e7e8a921057, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6740,7 +6740,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3853254721797896648, guid: a3a698f4508f77e45b267e7e8a921057, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.077
       objectReference: {fileID: 0}
     - target: {fileID: 3853254721797896648, guid: a3a698f4508f77e45b267e7e8a921057, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7675,7 +7675,7 @@ GameObject:
   - component: {fileID: 1773092814}
   - component: {fileID: 1773092813}
   m_Layer: 0
-  m_Name: TimelineObject
+  m_Name: 10 OurHouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
